@@ -34,7 +34,7 @@ on Linux.
 
 2.  Insert the SD card into the Raspberry Pi and wait for it to boot.
 
-3.  Wait for NixOS to rebuild (this may take a long time) and switch or SSH into
+3.  Wait for NixOS to rebuild and switch (this may take a long time) or SSH into
     the Raspberry Pi, then run the following command to monitor progress:
 
     ```sh
