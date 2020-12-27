@@ -1,0 +1,7 @@
+version: "3"
+services:
+  nixos-rpi-sd-image:
+    build:
+      context: nixos-rpi-sd-image
+    volumes:
+      - ./output:/output
