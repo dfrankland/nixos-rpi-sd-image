@@ -46,14 +46,18 @@ on Linux.
 ## Credit
 
 This was possible mostly in part because of the blog posts and code of
-@Robertof, but also the contributors to `nixos-generators` and the wiki for
+[@Robertof][], but also the contributors to `nixos-generators` and the wiki for
 NixOS on ARM.
 
 [NixOS on ARM > Building your own image > Compiling through QEMU][]
+
 [NixOS on a Raspberry Pi: creating a custom SD image with OpenSSH out of the box by @Robertof][]
+
 [NixOS Docker-based SD image builder][]
+
 [nixos-generators - one config, multiple formats][]
 
+[@Robertof]: https://github.com/Robertof
 [NixOS on ARM > Building your own image > Compiling through QEMU]: https://nixos.wiki/wiki/NixOS_on_ARM#Compiling_through_QEMU
 [NixOS on a Raspberry Pi: creating a custom SD image with OpenSSH out of the box by @Robertof]: https://rbf.dev/blog/2020/05/custom-nixos-build-for-raspberry-pis/
 [NixOS Docker-based SD image builder]: https://github.com/Robertof/nixos-docker-sd-image-builder
