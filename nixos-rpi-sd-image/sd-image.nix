@@ -35,18 +35,18 @@
   # users.users.root.password = "nixos";
 
   # Wireless networking (1). You might want to enable this if your Pi is not attached via Ethernet.
-  networking.wireless = {
-   enable = true;
-   interfaces = [ "wlan0" ];
-   networks = {
-     "replace-with-my-wifi-ssid" = {
-       psk = "replace-with-my-wifi-password";
-     };
-   };
-  };
+  # networking.wireless = {
+  #  enable = true;
+  #  interfaces = [ "wlan0" ];
+  #  networks = {
+  #    "replace-with-my-wifi-ssid" = {
+  #      psk = "replace-with-my-wifi-password";
+  #    };
+  #  };
+  # };
 
   # Wireless networking (2). Enables `wpa_supplicant` on boot.
-  systemd.services.wpa_supplicant.wantedBy = lib.mkOverride 10 [ "default.target" ];
+  # systemd.services.wpa_supplicant.wantedBy = lib.mkOverride 10 [ "default.target" ];
 
   # NTP time sync.
   services.timesyncd.enable = true;
