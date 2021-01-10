@@ -10,6 +10,11 @@ set -e
 
 ARTIFACT="$(tail -1 /nixos-generate-output.txt)"
 
+if echo $ARTIFACT | grep -q -E 'system$'
+then
+  ARTIFACT="$(dirname $ARTIFACT)/hydra-build-products"
+fi
+
 if echo $ARTIFACT | grep -q -E 'hydra-build-products$'
 then
   IMG="$(head -1 $ARTIFACT | awk '{ print $3 }')"
